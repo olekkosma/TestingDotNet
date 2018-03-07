@@ -8,11 +8,12 @@ namespace BankSystem
 {
     public class Credit
     {
-        public int valueOfLoan { get; set;}
-        public int loanTimeInWeeks;
-        public int provisionInProcents;
-        public int penaltyPerWeek;
-        public int totalValueToPay;
+       
+        public int valueOfLoan { get; set; }
+        public int loanTimeInWeeks { get; set; }
+        public int provisionInProcents { get; set; }
+        public int penaltyPerWeek { get; set; }
+        public int totalValueToPay { get; set; }
 
         public Credit(int ValueOfLoan, int LoanTimeInWeeks, int ProvisionInProcents, int PenaltyPerWeek)
         {

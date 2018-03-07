@@ -9,13 +9,20 @@ namespace BankSystem
 {
     public class Account
     {
-        private string name;
-        private int funds;
-        private ArrayList creditsTaken;
+        public string name { get; set; }
+        public int funds { get; set; }
+        public ArrayList creditsTaken { get; set; }
 
-        public Account(string Name)
+        public Account(string Name,int Funds)
         {
             name = Name;
+            funds = Funds;
+            creditsTaken = new ArrayList();
+        }
+        public Account(string newName)
+        {
+            name = newName;
+            funds = 0;
             creditsTaken = new ArrayList();
         }
 
@@ -70,9 +77,19 @@ namespace BankSystem
         }
         public void pay(int valueToPay)
         {
-            if (funds >= valueToPay)
+            if (valueToPay >= 0)
             {
-                funds -= valueToPay;
+                if (funds >= valueToPay)
+                {
+                    funds -= valueToPay;
+                }
+                else
+                {
+                    throw new ArgumentException("Not enough money");
+                }
+            }else
+            {
+                throw new ArgumentException("value to pay has to be positive");
             }
         }
     }

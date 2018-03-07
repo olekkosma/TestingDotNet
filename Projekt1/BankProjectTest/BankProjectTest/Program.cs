@@ -10,14 +10,7 @@ namespace BankProjectTest
     {
         static void Main(string[] args)
         {
-            Bank BGZ = new Bank();
-            Account Olek = new Account("Olek");
-            Account Tomek = new Account("Tomek");
-            BGZ.addNewAccount(Olek);
-            BGZ.addNewAccount(Tomek);
-            
-            Olek.takeLoan(new Credit(100000, 2, 50, 1000));
-
+         
             Console.ReadKey();
         }
     }

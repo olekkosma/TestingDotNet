@@ -6,3 +6,15 @@ C:\Users\Ukleja\Desktop\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Deb
 C:\Users\Ukleja\Desktop\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\Bank.pdb
 C:\Users\Ukleja\Desktop\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\BankLibraryUnitTest.dll
 C:\Users\Ukleja\Desktop\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\BankLibraryUnitTest.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\BankLibraryUnitTest.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\BankLibraryUnitTest.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\Bank.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\Bank.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\BankLibraryUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\BankLibraryUnitTest.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\BankLibraryUnitTest.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\data.csv
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\nunit.framework.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\nunit.framework.xml
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\bin\Debug\data2.csv

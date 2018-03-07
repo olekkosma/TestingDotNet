@@ -6,3 +6,11 @@ C:\Users\Ukleja\Desktop\Projekt1\BankProjectTest\BankProjectTest\bin\Debug\Bank.
 C:\Users\Ukleja\Desktop\Projekt1\BankProjectTest\BankProjectTest\obj\Debug\BankProjectTest.csprojResolveAssemblyReference.cache
 C:\Users\Ukleja\Desktop\Projekt1\BankProjectTest\BankProjectTest\obj\Debug\BankProjectTest.exe
 C:\Users\Ukleja\Desktop\Projekt1\BankProjectTest\BankProjectTest\obj\Debug\BankProjectTest.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\bin\Debug\BankProjectTest.exe.config
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\obj\Debug\BankProjectTest.exe
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\obj\Debug\BankProjectTest.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\bin\Debug\BankProjectTest.exe
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\bin\Debug\BankProjectTest.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\bin\Debug\Bank.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\bin\Debug\Bank.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\obj\Debug\BankProjectTest.csprojResolveAssemblyReference.cache
