@@ -1,0 +1,5 @@
+olek 300
+fred 400
+marek 600
+simpson 900
+none 5

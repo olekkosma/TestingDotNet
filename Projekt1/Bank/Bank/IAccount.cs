@@ -12,7 +12,7 @@ namespace BankSystem
 		void writeData();
 		int SummaryOfAllLoans();
 		void transfer(int money);
-		void transferToAnotherAccount(int money, string nameToSend);
+		void transferToAnotherAccount(string to,int money);
 		void nextWeek();
 		void takeLoan(ICredit newCredit);
 		void pay(int valueToPay);

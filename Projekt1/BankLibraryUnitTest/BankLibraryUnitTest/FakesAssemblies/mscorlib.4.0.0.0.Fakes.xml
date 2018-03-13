@@ -1,0 +1,1052 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mscorlib.4.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.IO.Fakes.ShimFile">
+            <summary>Shim type of System.IO.File</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFile.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.AppendAllLinesStringIEnumerableOfString">
+            <summary>Sets the shim of File.AppendAllLines(String path, IEnumerable`1&lt;String&gt; contents)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.AppendAllTextStringString">
+            <summary>Sets the shim of File.AppendAllText(String path, String contents)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.AppendTextString">
+            <summary>Sets the shim of File.AppendText(String path)</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFile.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFile.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.CopyStringString">
+            <summary>Sets the shim of File.Copy(String sourceFileName, String destFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.CopyStringStringBoolean">
+            <summary>Sets the shim of File.Copy(String sourceFileName, String destFileName, Boolean overwrite)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.CreateString">
+            <summary>Sets the shim of File.Create(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.CreateStringInt32">
+            <summary>Sets the shim of File.Create(String path, Int32 bufferSize)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.CreateStringInt32FileOptions">
+            <summary>Sets the shim of File.Create(String path, Int32 bufferSize, FileOptions options)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.CreateTextString">
+            <summary>Sets the shim of File.CreateText(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.DecryptString">
+            <summary>Sets the shim of File.Decrypt(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.DeleteString">
+            <summary>Sets the shim of File.Delete(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.EncryptString">
+            <summary>Sets the shim of File.Encrypt(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.ExistsString">
+            <summary>Sets the shim of File.Exists(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.GetAttributesString">
+            <summary>Sets the shim of File.GetAttributes(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.GetCreationTimeString">
+            <summary>Sets the shim of File.GetCreationTime(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.GetCreationTimeUtcString">
+            <summary>Sets the shim of File.GetCreationTimeUtc(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.GetLastAccessTimeString">
+            <summary>Sets the shim of File.GetLastAccessTime(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.GetLastAccessTimeUtcString">
+            <summary>Sets the shim of File.GetLastAccessTimeUtc(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.GetLastWriteTimeString">
+            <summary>Sets the shim of File.GetLastWriteTime(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.GetLastWriteTimeUtcString">
+            <summary>Sets the shim of File.GetLastWriteTimeUtc(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalCopyStringStringBooleanBoolean">
+            <summary>Sets the shim of File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalDeleteStringBoolean">
+            <summary>Sets the shim of File.InternalDelete(String path, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalExistsHelperStringBoolean">
+            <summary>Sets the shim of File.InternalExistsHelper(String path, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalExistsString">
+            <summary>Sets the shim of File.InternalExists(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalGetCreationTimeUtcStringBoolean">
+            <summary>Sets the shim of File.InternalGetCreationTimeUtc(String path, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalGetLastAccessTimeUtcStringBoolean">
+            <summary>Sets the shim of File.InternalGetLastAccessTimeUtc(String path, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalGetLastWriteTimeUtcStringBoolean">
+            <summary>Sets the shim of File.InternalGetLastWriteTimeUtc(String path, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalMoveStringStringBoolean">
+            <summary>Sets the shim of File.InternalMove(String sourceFileName, String destFileName, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalReadAllBytesStringBoolean">
+            <summary>Sets the shim of File.InternalReadAllBytes(String path, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalReplaceStringStringStringBoolean">
+            <summary>Sets the shim of File.InternalReplace(String sourceFileName, String destinationFileName, String destinationBackupFileName, Boolean ignoreMetadataErrors)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalWriteAllBytesStringByteArrayBoolean">
+            <summary>Sets the shim of File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.InternalWriteAllLinesTextWriterIEnumerableOfString">
+            <summary>Sets the shim of File.InternalWriteAllLines(TextWriter writer, IEnumerable`1&lt;String&gt; contents)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.MoveStringString">
+            <summary>Sets the shim of File.Move(String sourceFileName, String destFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.OpenFileStringFileAccessSafeFileHandleOut">
+            <summary>Sets the shim of File.OpenFile(String path, FileAccess access, SafeFileHandle&amp; handle)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.OpenReadString">
+            <summary>Sets the shim of File.OpenRead(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.OpenStringFileMode">
+            <summary>Sets the shim of File.Open(String path, FileMode mode)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.OpenStringFileModeFileAccess">
+            <summary>Sets the shim of File.Open(String path, FileMode mode, FileAccess access)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.OpenStringFileModeFileAccessFileShare">
+            <summary>Sets the shim of File.Open(String path, FileMode mode, FileAccess access, FileShare share)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.OpenTextString">
+            <summary>Sets the shim of File.OpenText(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.OpenWriteString">
+            <summary>Sets the shim of File.OpenWrite(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.ReadAllBytesString">
+            <summary>Sets the shim of File.ReadAllBytes(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.ReadAllLinesString">
+            <summary>Sets the shim of File.ReadAllLines(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.ReadAllTextString">
+            <summary>Sets the shim of File.ReadAllText(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.ReadLinesString">
+            <summary>Sets the shim of File.ReadLines(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.ReplaceStringStringString">
+            <summary>Sets the shim of File.Replace(String sourceFileName, String destinationFileName, String destinationBackupFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.ReplaceStringStringStringBoolean">
+            <summary>Sets the shim of File.Replace(String sourceFileName, String destinationFileName, String destinationBackupFileName, Boolean ignoreMetadataErrors)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.SetAttributesStringFileAttributes">
+            <summary>Sets the shim of File.SetAttributes(String path, FileAttributes fileAttributes)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.SetCreationTimeStringDateTime">
+            <summary>Sets the shim of File.SetCreationTime(String path, DateTime creationTime)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.SetCreationTimeUtcStringDateTime">
+            <summary>Sets the shim of File.SetCreationTimeUtc(String path, DateTime creationTimeUtc)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.SetLastAccessTimeStringDateTime">
+            <summary>Sets the shim of File.SetLastAccessTime(String path, DateTime lastAccessTime)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.SetLastAccessTimeUtcStringDateTime">
+            <summary>Sets the shim of File.SetLastAccessTimeUtc(String path, DateTime lastAccessTimeUtc)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.SetLastWriteTimeStringDateTime">
+            <summary>Sets the shim of File.SetLastWriteTime(String path, DateTime lastWriteTime)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.SetLastWriteTimeUtcStringDateTime">
+            <summary>Sets the shim of File.SetLastWriteTimeUtc(String path, DateTime lastWriteTimeUtc)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.UnsafeCopyStringStringBoolean">
+            <summary>Sets the shim of File.UnsafeCopy(String sourceFileName, String destFileName, Boolean overwrite)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.UnsafeDeleteString">
+            <summary>Sets the shim of File.UnsafeDelete(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.UnsafeExistsString">
+            <summary>Sets the shim of File.UnsafeExists(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.UnsafeMoveStringString">
+            <summary>Sets the shim of File.UnsafeMove(String sourceFileName, String destFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.UnsafeReadAllBytesString">
+            <summary>Sets the shim of File.UnsafeReadAllBytes(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.UnsafeReadAllTextString">
+            <summary>Sets the shim of File.UnsafeReadAllText(String path)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.UnsafeWriteAllBytesStringByteArray">
+            <summary>Sets the shim of File.UnsafeWriteAllBytes(String path, Byte[] bytes)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.UnsafeWriteAllTextStringString">
+            <summary>Sets the shim of File.UnsafeWriteAllText(String path, String contents)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.WriteAllBytesStringByteArray">
+            <summary>Sets the shim of File.WriteAllBytes(String path, Byte[] bytes)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.WriteAllLinesStringIEnumerableOfString">
+            <summary>Sets the shim of File.WriteAllLines(String path, IEnumerable`1&lt;String&gt; contents)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.WriteAllLinesStringStringArray">
+            <summary>Sets the shim of File.WriteAllLines(String path, String[] contents)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFile.WriteAllTextStringString">
+            <summary>Sets the shim of File.WriteAllText(String path, String contents)</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileInfo">
+            <summary>Shim type of System.IO.FileInfo</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileInfo.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileInfo.#ctor(System.IO.FileInfo)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileInfo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.AppendText">
+            <summary>Sets the shim of FileInfo.AppendText()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.CopyToString">
+            <summary>Sets the shim of FileInfo.CopyTo(String destFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.CopyToStringBoolean">
+            <summary>Sets the shim of FileInfo.CopyTo(String destFileName, Boolean overwrite)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.Create">
+            <summary>Sets the shim of FileInfo.Create()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.CreateText">
+            <summary>Sets the shim of FileInfo.CreateText()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.Decrypt">
+            <summary>Sets the shim of FileInfo.Decrypt()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.Delete">
+            <summary>Sets the shim of FileInfo.Delete()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.DirectoryGet">
+            <summary>Sets the shim of FileInfo.get_Directory()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.DirectoryNameGet">
+            <summary>Sets the shim of FileInfo.get_DirectoryName()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.Encrypt">
+            <summary>Sets the shim of FileInfo.Encrypt()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.ExistsGet">
+            <summary>Sets the shim of FileInfo.get_Exists()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.GetDisplayPathString">
+            <summary>Sets the shim of FileInfo.GetDisplayPath(String originalPath)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.InitStringBoolean">
+            <summary>Sets the shim of FileInfo.Init(String fileName, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.IsReadOnlyGet">
+            <summary>Sets the shim of FileInfo.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.IsReadOnlySetBoolean">
+            <summary>Sets the shim of FileInfo.set_IsReadOnly(Boolean value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.LengthGet">
+            <summary>Sets the shim of FileInfo.get_Length()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.MoveToString">
+            <summary>Sets the shim of FileInfo.MoveTo(String destFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.NameGet">
+            <summary>Sets the shim of FileInfo.get_Name()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.OpenFileMode">
+            <summary>Sets the shim of FileInfo.Open(FileMode mode)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.OpenFileModeFileAccess">
+            <summary>Sets the shim of FileInfo.Open(FileMode mode, FileAccess access)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.OpenFileModeFileAccessFileShare">
+            <summary>Sets the shim of FileInfo.Open(FileMode mode, FileAccess access, FileShare share)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.OpenRead">
+            <summary>Sets the shim of FileInfo.OpenRead()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.OpenText">
+            <summary>Sets the shim of FileInfo.OpenText()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.OpenWrite">
+            <summary>Sets the shim of FileInfo.OpenWrite()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.ReplaceStringString">
+            <summary>Sets the shim of FileInfo.Replace(String destinationFileName, String destinationBackupFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.ReplaceStringStringBoolean">
+            <summary>Sets the shim of FileInfo.Replace(String destinationFileName, String destinationBackupFileName, Boolean ignoreMetadataErrors)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AllInstances.ToString01">
+            <summary>Sets the shim of FileInfo.ToString()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.AppendText">
+            <summary>Sets the shim of FileInfo.AppendText()</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileInfo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileInfo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileInfo.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileInfo.FileInfo(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.ConstructorString">
+            <summary>Sets the shim of FileInfo.FileInfo(String fileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.ConstructorStringBoolean">
+            <summary>Sets the shim of FileInfo.FileInfo(String fullPath, Boolean ignoreThis)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.CopyToString">
+            <summary>Sets the shim of FileInfo.CopyTo(String destFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.CopyToStringBoolean">
+            <summary>Sets the shim of FileInfo.CopyTo(String destFileName, Boolean overwrite)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.Create">
+            <summary>Sets the shim of FileInfo.Create()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.CreateText">
+            <summary>Sets the shim of FileInfo.CreateText()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.Decrypt">
+            <summary>Sets the shim of FileInfo.Decrypt()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.Delete">
+            <summary>Sets the shim of FileInfo.Delete()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.DirectoryGet">
+            <summary>Sets the shim of FileInfo.get_Directory()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.DirectoryNameGet">
+            <summary>Sets the shim of FileInfo.get_DirectoryName()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.Encrypt">
+            <summary>Sets the shim of FileInfo.Encrypt()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.ExistsGet">
+            <summary>Sets the shim of FileInfo.get_Exists()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.GetDisplayPathString">
+            <summary>Sets the shim of FileInfo.GetDisplayPath(String originalPath)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.InitStringBoolean">
+            <summary>Sets the shim of FileInfo.Init(String fileName, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.IsReadOnlyGet">
+            <summary>Sets the shim of FileInfo.get_IsReadOnly()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.IsReadOnlySetBoolean">
+            <summary>Sets the shim of FileInfo.set_IsReadOnly(Boolean value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.LengthGet">
+            <summary>Sets the shim of FileInfo.get_Length()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.MoveToString">
+            <summary>Sets the shim of FileInfo.MoveTo(String destFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.NameGet">
+            <summary>Sets the shim of FileInfo.get_Name()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.OpenFileMode">
+            <summary>Sets the shim of FileInfo.Open(FileMode mode)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.OpenFileModeFileAccess">
+            <summary>Sets the shim of FileInfo.Open(FileMode mode, FileAccess access)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.OpenFileModeFileAccessFileShare">
+            <summary>Sets the shim of FileInfo.Open(FileMode mode, FileAccess access, FileShare share)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.OpenRead">
+            <summary>Sets the shim of FileInfo.OpenRead()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.OpenText">
+            <summary>Sets the shim of FileInfo.OpenText()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.OpenWrite">
+            <summary>Sets the shim of FileInfo.OpenWrite()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.ReplaceStringString">
+            <summary>Sets the shim of FileInfo.Replace(String destinationFileName, String destinationBackupFileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.ReplaceStringStringBoolean">
+            <summary>Sets the shim of FileInfo.Replace(String destinationFileName, String destinationBackupFileName, Boolean ignoreMetadataErrors)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileInfo.ToString">
+            <summary>Sets the shim of FileInfo.ToString()</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileLoadException">
+            <summary>Shim type of System.IO.FileLoadException</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileLoadException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileLoadException.#ctor(System.IO.FileLoadException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileLoadException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.AllInstances.FileNameGet">
+            <summary>Sets the shim of FileLoadException.get_FileName()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.AllInstances.FusionLogGet">
+            <summary>Sets the shim of FileLoadException.get_FusionLog()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileLoadException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.AllInstances.MessageGet">
+            <summary>Sets the shim of FileLoadException.get_Message()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.AllInstances.SetMessageField">
+            <summary>Sets the shim of FileLoadException.SetMessageField()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.AllInstances.ToString01">
+            <summary>Sets the shim of FileLoadException.ToString()</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileLoadException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileLoadException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileLoadException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.Constructor">
+            <summary>Sets the shim of FileLoadException.FileLoadException()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileLoadException.FileLoadException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.ConstructorString">
+            <summary>Sets the shim of FileLoadException.FileLoadException(String message)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.ConstructorStringException">
+            <summary>Sets the shim of FileLoadException.FileLoadException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.ConstructorStringString">
+            <summary>Sets the shim of FileLoadException.FileLoadException(String message, String fileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.ConstructorStringStringException">
+            <summary>Sets the shim of FileLoadException.FileLoadException(String message, String fileName, Exception inner)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.ConstructorStringStringInt32">
+            <summary>Sets the shim of FileLoadException.FileLoadException(String fileName, String fusionLog, Int32 hResult)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.FileNameGet">
+            <summary>Sets the shim of FileLoadException.get_FileName()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.FormatFileLoadExceptionMessageStringInt32">
+            <summary>Sets the shim of FileLoadException.FormatFileLoadExceptionMessage(String fileName, Int32 hResult)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.FusionLogGet">
+            <summary>Sets the shim of FileLoadException.get_FusionLog()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileLoadException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.MessageGet">
+            <summary>Sets the shim of FileLoadException.get_Message()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.SetMessageField">
+            <summary>Sets the shim of FileLoadException.SetMessageField()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileLoadException.ToString">
+            <summary>Sets the shim of FileLoadException.ToString()</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileNotFoundException">
+            <summary>Shim type of System.IO.FileNotFoundException</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileNotFoundException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileNotFoundException.#ctor(System.IO.FileNotFoundException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileNotFoundException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.AllInstances.FileNameGet">
+            <summary>Sets the shim of FileNotFoundException.get_FileName()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.AllInstances.FusionLogGet">
+            <summary>Sets the shim of FileNotFoundException.get_FusionLog()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileNotFoundException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.AllInstances.MessageGet">
+            <summary>Sets the shim of FileNotFoundException.get_Message()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.AllInstances.SetMessageField">
+            <summary>Sets the shim of FileNotFoundException.SetMessageField()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.AllInstances.ToString01">
+            <summary>Sets the shim of FileNotFoundException.ToString()</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileNotFoundException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileNotFoundException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileNotFoundException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.Constructor">
+            <summary>Sets the shim of FileNotFoundException.FileNotFoundException()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileNotFoundException.FileNotFoundException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.ConstructorString">
+            <summary>Sets the shim of FileNotFoundException.FileNotFoundException(String message)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.ConstructorStringException">
+            <summary>Sets the shim of FileNotFoundException.FileNotFoundException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.ConstructorStringString">
+            <summary>Sets the shim of FileNotFoundException.FileNotFoundException(String message, String fileName)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.ConstructorStringStringException">
+            <summary>Sets the shim of FileNotFoundException.FileNotFoundException(String message, String fileName, Exception innerException)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.ConstructorStringStringInt32">
+            <summary>Sets the shim of FileNotFoundException.FileNotFoundException(String fileName, String fusionLog, Int32 hResult)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.FileNameGet">
+            <summary>Sets the shim of FileNotFoundException.get_FileName()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.FusionLogGet">
+            <summary>Sets the shim of FileNotFoundException.get_FusionLog()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileNotFoundException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.MessageGet">
+            <summary>Sets the shim of FileNotFoundException.get_Message()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.SetMessageField">
+            <summary>Sets the shim of FileNotFoundException.SetMessageField()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileNotFoundException.ToString">
+            <summary>Sets the shim of FileNotFoundException.ToString()</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileStream">
+            <summary>Shim type of System.IO.FileStream</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileStream.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileStream.#ctor(System.IO.FileStream)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileStream.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.BeginReadByteArrayInt32Int32AsyncCallbackObject">
+            <summary>Sets the shim of FileStream.BeginRead(Byte[] array, Int32 offset, Int32 numBytes, AsyncCallback userCallback, Object stateObject)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.BeginWriteByteArrayInt32Int32AsyncCallbackObject">
+            <summary>Sets the shim of FileStream.BeginWrite(Byte[] array, Int32 offset, Int32 numBytes, AsyncCallback userCallback, Object stateObject)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.CanReadGet">
+            <summary>Sets the shim of FileStream.get_CanRead()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.CanSeekGet">
+            <summary>Sets the shim of FileStream.get_CanSeek()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.CanWriteGet">
+            <summary>Sets the shim of FileStream.get_CanWrite()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of FileStream.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.EndReadIAsyncResult">
+            <summary>Sets the shim of FileStream.EndRead(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.EndWriteIAsyncResult">
+            <summary>Sets the shim of FileStream.EndWrite(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.Flush">
+            <summary>Sets the shim of FileStream.Flush()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.FlushAsyncCancellationToken">
+            <summary>Sets the shim of FileStream.FlushAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.FlushBoolean">
+            <summary>Sets the shim of FileStream.Flush(Boolean flushToDisk)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.FlushInternalBuffer">
+            <summary>Sets the shim of FileStream.FlushInternalBuffer()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.FlushOSBuffer">
+            <summary>Sets the shim of FileStream.FlushOSBuffer()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.FlushRead">
+            <summary>Sets the shim of FileStream.FlushRead()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.FlushWriteBoolean">
+            <summary>Sets the shim of FileStream.FlushWrite(Boolean calledFromFinalizer)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.HandleGet">
+            <summary>Sets the shim of FileStream.get_Handle()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.IsAsyncGet">
+            <summary>Sets the shim of FileStream.get_IsAsync()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.LengthGet">
+            <summary>Sets the shim of FileStream.get_Length()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.LockInt64Int64">
+            <summary>Sets the shim of FileStream.Lock(Int64 position, Int64 length)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.NameGet">
+            <summary>Sets the shim of FileStream.get_Name()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.NameInternalGet">
+            <summary>Sets the shim of FileStream.get_NameInternal()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.PositionGet">
+            <summary>Sets the shim of FileStream.get_Position()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.PositionSetInt64">
+            <summary>Sets the shim of FileStream.set_Position(Int64 value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.ReadAsyncByteArrayInt32Int32CancellationToken">
+            <summary>Sets the shim of FileStream.ReadAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.ReadByte">
+            <summary>Sets the shim of FileStream.ReadByte()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.ReadByteArrayInt32Int32">
+            <summary>Sets the shim of FileStream.Read(Byte[] array, Int32 offset, Int32 count)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.ReadCoreByteArrayInt32Int32">
+            <summary>Sets the shim of FileStream.ReadCore(Byte[] buffer, Int32 offset, Int32 count)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.SafeFileHandleGet">
+            <summary>Sets the shim of FileStream.get_SafeFileHandle()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.SeekCoreInt64SeekOrigin">
+            <summary>Sets the shim of FileStream.SeekCore(Int64 offset, SeekOrigin origin)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.SeekInt64SeekOrigin">
+            <summary>Sets the shim of FileStream.Seek(Int64 offset, SeekOrigin origin)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.SetLengthCoreInt64">
+            <summary>Sets the shim of FileStream.SetLengthCore(Int64 value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.SetLengthInt64">
+            <summary>Sets the shim of FileStream.SetLength(Int64 value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.UnlockInt64Int64">
+            <summary>Sets the shim of FileStream.Unlock(Int64 position, Int64 length)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.VerifyHandleIsSync">
+            <summary>Sets the shim of FileStream.VerifyHandleIsSync()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.VerifyOSHandlePosition">
+            <summary>Sets the shim of FileStream.VerifyOSHandlePosition()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.WriteAsyncByteArrayInt32Int32CancellationToken">
+            <summary>Sets the shim of FileStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.WriteByteArrayInt32Int32">
+            <summary>Sets the shim of FileStream.Write(Byte[] array, Int32 offset, Int32 count)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.WriteByteByte">
+            <summary>Sets the shim of FileStream.WriteByte(Byte value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.AllInstances.WriteCoreByteArrayInt32Int32">
+            <summary>Sets the shim of FileStream.WriteCore(Byte[] buffer, Int32 offset, Int32 count)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.BeginReadByteArrayInt32Int32AsyncCallbackObject">
+            <summary>Sets the shim of FileStream.BeginRead(Byte[] array, Int32 offset, Int32 numBytes, AsyncCallback userCallback, Object stateObject)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.BeginWriteByteArrayInt32Int32AsyncCallbackObject">
+            <summary>Sets the shim of FileStream.BeginWrite(Byte[] array, Int32 offset, Int32 numBytes, AsyncCallback userCallback, Object stateObject)</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileStream.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileStream.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileStream.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.CanReadGet">
+            <summary>Sets the shim of FileStream.get_CanRead()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.CanSeekGet">
+            <summary>Sets the shim of FileStream.get_CanSeek()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.CanWriteGet">
+            <summary>Sets the shim of FileStream.get_CanWrite()</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileStream.CancelTaskOf1Object``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action{System.Object})">
+            <summary>Sets the shim of FileStream.CancelTask(Object state)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.Constructor">
+            <summary>Sets the shim of FileStream.FileStream()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorIntPtrFileAccess">
+            <summary>Sets the shim of FileStream.FileStream(IntPtr handle, FileAccess access)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorIntPtrFileAccessBoolean">
+            <summary>Sets the shim of FileStream.FileStream(IntPtr handle, FileAccess access, Boolean ownsHandle)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorIntPtrFileAccessBooleanInt32">
+            <summary>Sets the shim of FileStream.FileStream(IntPtr handle, FileAccess access, Boolean ownsHandle, Int32 bufferSize)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorIntPtrFileAccessBooleanInt32Boolean">
+            <summary>Sets the shim of FileStream.FileStream(IntPtr handle, FileAccess access, Boolean ownsHandle, Int32 bufferSize, Boolean isAsync)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorSafeFileHandleFileAccess">
+            <summary>Sets the shim of FileStream.FileStream(SafeFileHandle handle, FileAccess access)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorSafeFileHandleFileAccessInt32">
+            <summary>Sets the shim of FileStream.FileStream(SafeFileHandle handle, FileAccess access, Int32 bufferSize)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorSafeFileHandleFileAccessInt32Boolean">
+            <summary>Sets the shim of FileStream.FileStream(SafeFileHandle handle, FileAccess access, Int32 bufferSize, Boolean isAsync)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileMode">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileModeFileAccess">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode, FileAccess access)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileModeFileAccessFileShare">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode, FileAccess access, FileShare share)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileModeFileAccessFileShareInt32">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileModeFileAccessFileShareInt32Boolean">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileModeFileAccessFileShareInt32FileOptions">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileModeFileAccessFileShareInt32FileOptionsStringBoolean">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileModeFileAccessFileShareInt32FileOptionsStringBooleanBoolean">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileModeFileAccessFileShareInt32FileOptionsStringBooleanBooleanBoolean">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ConstructorStringFileModeFileSystemRightsFileShareInt32FileOptions">
+            <summary>Sets the shim of FileStream.FileStream(String path, FileMode mode, FileSystemRights rights, FileShare share, Int32 bufferSize, FileOptions options)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.DisposeBoolean">
+            <summary>Sets the shim of FileStream.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.EndReadIAsyncResult">
+            <summary>Sets the shim of FileStream.EndRead(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.EndReadTaskIAsyncResult">
+            <summary>Sets the shim of FileStream.EndReadTask(IAsyncResult iar)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.EndWriteIAsyncResult">
+            <summary>Sets the shim of FileStream.EndWrite(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.EndWriteTaskIAsyncResult">
+            <summary>Sets the shim of FileStream.EndWriteTask(IAsyncResult iar)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.Flush">
+            <summary>Sets the shim of FileStream.Flush()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.FlushAsyncCancellationToken">
+            <summary>Sets the shim of FileStream.FlushAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.FlushBoolean">
+            <summary>Sets the shim of FileStream.Flush(Boolean flushToDisk)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.FlushInternalBuffer">
+            <summary>Sets the shim of FileStream.FlushInternalBuffer()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.FlushOSBuffer">
+            <summary>Sets the shim of FileStream.FlushOSBuffer()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.FlushRead">
+            <summary>Sets the shim of FileStream.FlushRead()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.FlushWriteBoolean">
+            <summary>Sets the shim of FileStream.FlushWrite(Boolean calledFromFinalizer)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.HandleGet">
+            <summary>Sets the shim of FileStream.get_Handle()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.IsAsyncGet">
+            <summary>Sets the shim of FileStream.get_IsAsync()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.LengthGet">
+            <summary>Sets the shim of FileStream.get_Length()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.LockInt64Int64">
+            <summary>Sets the shim of FileStream.Lock(Int64 position, Int64 length)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.NameGet">
+            <summary>Sets the shim of FileStream.get_Name()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.NameInternalGet">
+            <summary>Sets the shim of FileStream.get_NameInternal()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.PositionGet">
+            <summary>Sets the shim of FileStream.get_Position()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.PositionSetInt64">
+            <summary>Sets the shim of FileStream.set_Position(Int64 value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ReadAsyncByteArrayInt32Int32CancellationToken">
+            <summary>Sets the shim of FileStream.ReadAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ReadByte">
+            <summary>Sets the shim of FileStream.ReadByte()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ReadByteArrayInt32Int32">
+            <summary>Sets the shim of FileStream.Read(Byte[] array, Int32 offset, Int32 count)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.ReadCoreByteArrayInt32Int32">
+            <summary>Sets the shim of FileStream.ReadCore(Byte[] buffer, Int32 offset, Int32 count)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.SafeFileHandleGet">
+            <summary>Sets the shim of FileStream.get_SafeFileHandle()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.SeekCoreInt64SeekOrigin">
+            <summary>Sets the shim of FileStream.SeekCore(Int64 offset, SeekOrigin origin)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.SeekInt64SeekOrigin">
+            <summary>Sets the shim of FileStream.Seek(Int64 offset, SeekOrigin origin)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.SetLengthCoreInt64">
+            <summary>Sets the shim of FileStream.SetLengthCore(Int64 value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.SetLengthInt64">
+            <summary>Sets the shim of FileStream.SetLength(Int64 value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.UnlockInt64Int64">
+            <summary>Sets the shim of FileStream.Unlock(Int64 position, Int64 length)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.VerifyHandleIsSync">
+            <summary>Sets the shim of FileStream.VerifyHandleIsSync()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.VerifyOSHandlePosition">
+            <summary>Sets the shim of FileStream.VerifyOSHandlePosition()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.WriteAsyncByteArrayInt32Int32CancellationToken">
+            <summary>Sets the shim of FileStream.WriteAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.WriteByteArrayInt32Int32">
+            <summary>Sets the shim of FileStream.Write(Byte[] array, Int32 offset, Int32 count)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.WriteByteByte">
+            <summary>Sets the shim of FileStream.WriteByte(Byte value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileStream.WriteCoreByteArrayInt32Int32">
+            <summary>Sets the shim of FileStream.WriteCore(Byte[] buffer, Int32 offset, Int32 count)</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileSystemInfo">
+            <summary>Shim type of System.IO.FileSystemInfo</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileSystemInfo.#ctor(System.IO.FileSystemInfo)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.IO.Fakes.ShimFileSystemInfo.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.AttributesGet">
+            <summary>Sets the shim of FileSystemInfo.get_Attributes()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.AttributesSetFileAttributes">
+            <summary>Sets the shim of FileSystemInfo.set_Attributes(FileAttributes value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.CreationTimeGet">
+            <summary>Sets the shim of FileSystemInfo.get_CreationTime()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.CreationTimeSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_CreationTime(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.CreationTimeUtcGet">
+            <summary>Sets the shim of FileSystemInfo.get_CreationTimeUtc()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.CreationTimeUtcSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_CreationTimeUtc(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.DisplayPathGet">
+            <summary>Sets the shim of FileSystemInfo.get_DisplayPath()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.DisplayPathSetString">
+            <summary>Sets the shim of FileSystemInfo.set_DisplayPath(String value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.ExtensionGet">
+            <summary>Sets the shim of FileSystemInfo.get_Extension()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.FullNameGet">
+            <summary>Sets the shim of FileSystemInfo.get_FullName()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileSystemInfo.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.LastAccessTimeGet">
+            <summary>Sets the shim of FileSystemInfo.get_LastAccessTime()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.LastAccessTimeSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_LastAccessTime(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.LastAccessTimeUtcGet">
+            <summary>Sets the shim of FileSystemInfo.get_LastAccessTimeUtc()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.LastAccessTimeUtcSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_LastAccessTimeUtc(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.LastWriteTimeGet">
+            <summary>Sets the shim of FileSystemInfo.get_LastWriteTime()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.LastWriteTimeSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_LastWriteTime(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.LastWriteTimeUtcGet">
+            <summary>Sets the shim of FileSystemInfo.get_LastWriteTimeUtc()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.LastWriteTimeUtcSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_LastWriteTimeUtc(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.Refresh">
+            <summary>Sets the shim of FileSystemInfo.Refresh()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AllInstances.UnsafeGetFullNameGet">
+            <summary>Sets the shim of FileSystemInfo.get_UnsafeGetFullName()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AttributesGet">
+            <summary>Sets the shim of FileSystemInfo.get_Attributes()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.AttributesSetFileAttributes">
+            <summary>Sets the shim of FileSystemInfo.set_Attributes(FileAttributes value)</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileSystemInfo.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileSystemInfo.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.IO.Fakes.ShimFileSystemInfo.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.Constructor">
+            <summary>Sets the shim of FileSystemInfo.FileSystemInfo()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileSystemInfo.FileSystemInfo(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.CreationTimeGet">
+            <summary>Sets the shim of FileSystemInfo.get_CreationTime()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.CreationTimeSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_CreationTime(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.CreationTimeUtcGet">
+            <summary>Sets the shim of FileSystemInfo.get_CreationTimeUtc()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.CreationTimeUtcSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_CreationTimeUtc(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.DisplayPathGet">
+            <summary>Sets the shim of FileSystemInfo.get_DisplayPath()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.DisplayPathSetString">
+            <summary>Sets the shim of FileSystemInfo.set_DisplayPath(String value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.ExtensionGet">
+            <summary>Sets the shim of FileSystemInfo.get_Extension()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.FullNameGet">
+            <summary>Sets the shim of FileSystemInfo.get_FullName()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of FileSystemInfo.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.LastAccessTimeGet">
+            <summary>Sets the shim of FileSystemInfo.get_LastAccessTime()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.LastAccessTimeSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_LastAccessTime(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.LastAccessTimeUtcGet">
+            <summary>Sets the shim of FileSystemInfo.get_LastAccessTimeUtc()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.LastAccessTimeUtcSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_LastAccessTimeUtc(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.LastWriteTimeGet">
+            <summary>Sets the shim of FileSystemInfo.get_LastWriteTime()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.LastWriteTimeSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_LastWriteTime(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.LastWriteTimeUtcGet">
+            <summary>Sets the shim of FileSystemInfo.get_LastWriteTimeUtc()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.LastWriteTimeUtcSetDateTime">
+            <summary>Sets the shim of FileSystemInfo.set_LastWriteTimeUtc(DateTime value)</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.Refresh">
+            <summary>Sets the shim of FileSystemInfo.Refresh()</summary>
+        </member>
+        <member name="P:System.IO.Fakes.ShimFileSystemInfo.UnsafeGetFullNameGet">
+            <summary>Sets the shim of FileSystemInfo.get_UnsafeGetFullName()</summary>
+        </member>
+    </members>
+</doc>

@@ -1,6 +1,7 @@
 ﻿using System;
 using BankSystem;
 using BankSystem.Fakes;
+using Microsoft.QualityTools.Testing.Fakes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BankLibraryUnitTest
@@ -16,21 +17,6 @@ namespace BankLibraryUnitTest
 			BGZ.createAccount("olek",10000);
 			BGZ.createAccount("tomek");
 			BGZ.createAccount("balcer");
-		}
-
-		[TestMethod]
-		public void StubPayCreditBeforeTime()
-		{
-			// Arrange:  
-			ICredit credit = new StubICredit()
-			 {
-                PayCreditImmediately = () => { return true; }
-			 };
-            BGZ.logIn("olek").takeLoan(credit);
-            // Act:  
-            bool actualValue = BGZ.logIn("olek").payCreditBeforeTime(credit);
-			// Assert:  
-			Assert.AreEqual(0, BGZ.logIn("olek").creditsTaken.Count);
 		}
 
         [TestMethod]
@@ -49,7 +35,7 @@ namespace BankLibraryUnitTest
         }
 
         [TestMethod]
-        public void EveryAccountIsUnique()
+        public void CatchingExceptionEveryAccountIsUnique()
         {
             BGZ.createAccount("jendrzej");
             try
@@ -74,11 +60,10 @@ namespace BankLibraryUnitTest
             set { testContextInstance = value; }
         }
         
-        
         [TestMethod]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV","|DataDirectory|\\data.csv",
             "data#csv",DataAccessMethod.Sequential),DeploymentItem("data.csv")]
-        public void IsPayingWorks()
+        public void IsPayingWork()
         {
 			Bank mBank = new Bank();
             var name = TestContext.DataRow["name"].ToString();
@@ -99,7 +84,7 @@ namespace BankLibraryUnitTest
         [ExpectedException(typeof(ArgumentException))]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data2.csv",
             "data2#csv", DataAccessMethod.Sequential), DeploymentItem("data2.csv")]
-        public void IsPayingWorksWhenEnoughMoney()
+        public void IsPayingWorksWhenNotEnoughMoney()
         {
 			Bank mBank = new Bank();
 			var name = TestContext.DataRow["name"].ToString();
@@ -113,15 +98,100 @@ namespace BankLibraryUnitTest
 			mBank.logIn(name).pay(payment2);
         }
 
-		[TestMethod]
-		public void transferingMoney()
+
+        [TestMethod]
+        public void ShimFileDoesNotExist()
+        {
+            using (ShimsContext.Create())
+            {
+                //Arrange
+                System.IO.Fakes.ShimFile.ReadAllTextString = file =>  string.Format("olek 300 tomek 305");
+                //Act
+                Bank bank = new Bank();
+                bank.addAccountsFromFile("nomeFile.extensions");
+                var componentToTest = bank.accounts.Count;
+                Assert.AreEqual(2, componentToTest);
+            }
+           
+        }
+
+
+        [TestMethod]
+        public void NextWeekIsCounting()
+        {
+            Credit olekCredit = new Credit(1000, 6, 10, 100);
+            BGZ.logIn("olek").takeLoan(olekCredit);
+            for (int i = 0; i < 5; i++) { BGZ.nextWeek(); }
+
+            Assert.AreEqual(true, olekCredit.IsTimeToPay());
+        }
+
+        [TestMethod]
+        public void CountingValueToPayForOneCredit()
+        {
+            Credit olekCredit = new Credit(1000, 6, 10, 100);
+            BGZ.logIn("olek").takeLoan(olekCredit);
+
+            Assert.AreEqual(1100, olekCredit.HowMuchToPay());
+        }
+
+        [TestMethod]
+        public void SummingValueOfAllLoansCombined()
+        {
+            Credit olekCredit = new Credit(1000, 6, 10, 100);
+            Credit olekCreditSecond = new Credit(2000, 6, 10, 100);
+            Credit olekCreditThird = new Credit(3000, 6, 10, 100);
+            BGZ.logIn("olek").takeLoan(olekCredit);
+            BGZ.logIn("olek").takeLoan(olekCreditSecond);
+            BGZ.logIn("olek").takeLoan(olekCreditThird);
+            
+            Assert.AreEqual(6600, BGZ.logIn("olek").SummaryOfAllLoans());
+        }
+
+        [TestMethod]
+        public void TransferingMoneyToOTherPersonCounting()
+        {
+            BGZ.createAccount("jendrzej");
+            BGZ.logIn("olek").transferToAnotherAccount("jendrzej", 300);
+            BGZ.logIn("olek").transferToAnotherAccount("jendrzej", 400);
+            BGZ.logIn("olek").transferToAnotherAccount("jendrzej", 500);
+            
+            Assert.AreEqual(3, BGZ.logIn("olek").transfersToMake.Count);
+        }
+
+        [TestMethod]
+		public void TransferingMoneyToOTherPerson()
 		{
 			BGZ.logIn("olek").transfer(1000);
 			BGZ.createAccount("jendrzej");
-			BGZ.logIn("olek").transferToAnotherAccount(300, "jendrzej");
-			BGZ.nextWeek();
+            BGZ.logIn("olek").transferToAnotherAccount("jendrzej", 300);
+            BGZ.nextWeek();
 			Assert.AreEqual(300, BGZ.logIn("jendrzej").funds);
 		}
 
-	}
+        [TestMethod]
+        public void TransferingMoneyToOtherPersonTwiceAtOnce()
+        {
+            BGZ.createAccount("jendrzej");
+            BGZ.logIn("olek").transferToAnotherAccount("jendrzej", 300);
+            BGZ.logIn("olek").transferToAnotherAccount("jendrzej", 400);
+            BGZ.nextWeek();
+            Assert.AreEqual(700, BGZ.logIn("jendrzej").funds);
+        }
+
+        [TestMethod]
+        public void StubPayCreditBeforeTime()
+        {
+            // Arrange:  
+            ICredit credit = new StubICredit()
+            {
+                PayCreditImmediately = () => { return true; }
+            };
+            BGZ.logIn("olek").takeLoan(credit);
+            // Act:  
+            bool actualValue = BGZ.logIn("olek").payCreditBeforeTime(credit);
+            // Assert:  
+            Assert.AreEqual(0, BGZ.logIn("olek").creditsTaken.Count);
+        }
+    }
 }

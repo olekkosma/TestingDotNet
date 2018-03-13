@@ -7,13 +7,16 @@ using System.Threading.Tasks;
 
 namespace BankSystem
 {
-	class Transfer : ITransfer
+	public class Transfer : ITransfer
 	{
 		public string from { get; set; }
 		public string to { get; set; }
-		public int money { get; set; }
-
-		public Transfer(string From,string To, int Money)
+		private int money { get; set; }
+        public int Money
+        {
+            get { return money; }
+        }
+        public Transfer(string From,string To, int Money)
 		{
 			from = From;
 			to = To;

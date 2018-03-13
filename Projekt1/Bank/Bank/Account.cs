@@ -47,12 +47,12 @@ namespace BankSystem
 				funds += money;
 			}
         }
-		public void transferToAnotherAccount(int money, string nameToSend)
+		public void transferToAnotherAccount(string to, int money)
 		{
-			if (money > 0 && funds>money)
+			if (money > 0 && funds> money)
 			{
 				funds -= money;
-				transfersToMake.Add(new Transfer(name, nameToSend, money));
+				transfersToMake.Add(new Transfer(name,to,money));
 			}
 		}
 

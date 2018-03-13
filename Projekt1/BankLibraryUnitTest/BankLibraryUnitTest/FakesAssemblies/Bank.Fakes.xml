@@ -52,8 +52,8 @@
         <member name="P:BankSystem.Fakes.ShimAccount.AllInstances.transferInt32">
             <summary>Sets the shim of Account.transfer(Int32 money)</summary>
         </member>
-        <member name="P:BankSystem.Fakes.ShimAccount.AllInstances.transferToAnotherAccountInt32String">
-            <summary>Sets the shim of Account.transferToAnotherAccount(Int32 money, String nameToSend)</summary>
+        <member name="P:BankSystem.Fakes.ShimAccount.AllInstances.transferToAnotherAccountStringInt32">
+            <summary>Sets the shim of Account.transferToAnotherAccount(String to, Int32 money)</summary>
         </member>
         <member name="P:BankSystem.Fakes.ShimAccount.AllInstances.transfersToMakeGet">
             <summary>Sets the shim of Account.get_transfersToMake()</summary>
@@ -118,8 +118,8 @@
         <member name="P:BankSystem.Fakes.ShimAccount.transferInt32">
             <summary>Sets the shim of Account.transfer(Int32 money)</summary>
         </member>
-        <member name="P:BankSystem.Fakes.ShimAccount.transferToAnotherAccountInt32String">
-            <summary>Sets the shim of Account.transferToAnotherAccount(Int32 money, String nameToSend)</summary>
+        <member name="P:BankSystem.Fakes.ShimAccount.transferToAnotherAccountStringInt32">
+            <summary>Sets the shim of Account.transferToAnotherAccount(String to, Int32 money)</summary>
         </member>
         <member name="P:BankSystem.Fakes.ShimAccount.transfersToMakeGet">
             <summary>Sets the shim of Account.get_transfersToMake()</summary>
@@ -148,11 +148,20 @@
         <member name="P:BankSystem.Fakes.ShimBank.AllInstances.accountsSetArrayList">
             <summary>Sets the shim of Bank.set_accounts(ArrayList value)</summary>
         </member>
+        <member name="P:BankSystem.Fakes.ShimBank.AllInstances.addAccountsFromFileString">
+            <summary>Sets the shim of Bank.addAccountsFromFile(String file)</summary>
+        </member>
         <member name="P:BankSystem.Fakes.ShimBank.AllInstances.createAccountString">
             <summary>Sets the shim of Bank.createAccount(String name)</summary>
         </member>
         <member name="P:BankSystem.Fakes.ShimBank.AllInstances.createAccountStringInt32">
             <summary>Sets the shim of Bank.createAccount(String name, Int32 funds)</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimBank.AllInstances.dataGet">
+            <summary>Sets the shim of Bank.get_data()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimBank.AllInstances.dataSetString">
+            <summary>Sets the shim of Bank.set_data(String value)</summary>
         </member>
         <member name="P:BankSystem.Fakes.ShimBank.AllInstances.isAlreadyThatAccountString">
             <summary>Sets the shim of Bank.isAlreadyThatAccount(String name)</summary>
@@ -181,11 +190,20 @@
         <member name="P:BankSystem.Fakes.ShimBank.accountsSetArrayList">
             <summary>Sets the shim of Bank.set_accounts(ArrayList value)</summary>
         </member>
+        <member name="P:BankSystem.Fakes.ShimBank.addAccountsFromFileString">
+            <summary>Sets the shim of Bank.addAccountsFromFile(String file)</summary>
+        </member>
         <member name="P:BankSystem.Fakes.ShimBank.createAccountString">
             <summary>Sets the shim of Bank.createAccount(String name)</summary>
         </member>
         <member name="P:BankSystem.Fakes.ShimBank.createAccountStringInt32">
             <summary>Sets the shim of Bank.createAccount(String name, Int32 funds)</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimBank.dataGet">
+            <summary>Sets the shim of Bank.get_data()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimBank.dataSetString">
+            <summary>Sets the shim of Bank.set_data(String value)</summary>
         </member>
         <member name="P:BankSystem.Fakes.ShimBank.isAlreadyThatAccountString">
             <summary>Sets the shim of Bank.isAlreadyThatAccount(String name)</summary>
@@ -307,6 +325,75 @@
         <member name="P:BankSystem.Fakes.ShimCredit.valueOfLoanSetInt32">
             <summary>Sets the shim of Credit.set_valueOfLoan(Int32 value)</summary>
         </member>
+        <member name="T:BankSystem.Fakes.ShimTransfer">
+            <summary>Shim type of BankSystem.Transfer</summary>
+        </member>
+        <member name="M:BankSystem.Fakes.ShimTransfer.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:BankSystem.Fakes.ShimTransfer.#ctor(BankSystem.Transfer)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:BankSystem.Fakes.ShimTransfer.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.MoneyGet">
+            <summary>Sets the shim of Transfer.get_Money()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.fromGet">
+            <summary>Sets the shim of Transfer.get_from()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.fromSetString">
+            <summary>Sets the shim of Transfer.set_from(String value)</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.moneyGet">
+            <summary>Sets the shim of Transfer.get_money()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.moneySetInt32">
+            <summary>Sets the shim of Transfer.set_money(Int32 value)</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.toGet">
+            <summary>Sets the shim of Transfer.get_to()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.toSetString">
+            <summary>Sets the shim of Transfer.set_to(String value)</summary>
+        </member>
+        <member name="M:BankSystem.Fakes.ShimTransfer.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:BankSystem.Fakes.ShimTransfer.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:BankSystem.Fakes.ShimTransfer.Bind(BankSystem.ITransfer)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.ConstructorStringStringInt32">
+            <summary>Sets the shim of Transfer.Transfer(String From, String To, Int32 Money)</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.MoneyGet">
+            <summary>Sets the shim of Transfer.get_Money()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.fromGet">
+            <summary>Sets the shim of Transfer.get_from()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.fromSetString">
+            <summary>Sets the shim of Transfer.set_from(String value)</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.moneyGet">
+            <summary>Sets the shim of Transfer.get_money()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.moneySetInt32">
+            <summary>Sets the shim of Transfer.set_money(Int32 value)</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.toGet">
+            <summary>Sets the shim of Transfer.get_to()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimTransfer.toSetString">
+            <summary>Sets the shim of Transfer.set_to(String value)</summary>
+        </member>
         <member name="T:BankSystem.Fakes.StubAccount">
             <summary>Stub type of BankSystem.Account</summary>
         </member>
@@ -385,8 +472,8 @@
         <member name="M:BankSystem.Fakes.StubIAccount.BankSystem#IAccount#transfer(System.Int32)">
             <summary>Sets the stub of IAccount.transfer(Int32 money)</summary>
         </member>
-        <member name="M:BankSystem.Fakes.StubIAccount.BankSystem#IAccount#transferToAnotherAccount(System.Int32,System.String)">
-            <summary>Sets the stub of IAccount.transferToAnotherAccount(Int32 money, String nameToSend)</summary>
+        <member name="M:BankSystem.Fakes.StubIAccount.BankSystem#IAccount#transferToAnotherAccount(System.String,System.Int32)">
+            <summary>Sets the stub of IAccount.transferToAnotherAccount(String to, Int32 money)</summary>
         </member>
         <member name="M:BankSystem.Fakes.StubIAccount.BankSystem#IAccount#writeData">
             <summary>Sets the stub of IAccount.writeData()</summary>
@@ -406,8 +493,8 @@
         <member name="F:BankSystem.Fakes.StubIAccount.TransferInt32">
             <summary>Sets the stub of IAccount.transfer(Int32 money)</summary>
         </member>
-        <member name="F:BankSystem.Fakes.StubIAccount.TransferToAnotherAccountInt32String">
-            <summary>Sets the stub of IAccount.transferToAnotherAccount(Int32 money, String nameToSend)</summary>
+        <member name="F:BankSystem.Fakes.StubIAccount.TransferToAnotherAccountStringInt32">
+            <summary>Sets the stub of IAccount.transferToAnotherAccount(String to, Int32 money)</summary>
         </member>
         <member name="F:BankSystem.Fakes.StubIAccount.WriteData">
             <summary>Sets the stub of IAccount.writeData()</summary>
@@ -447,6 +534,30 @@
         </member>
         <member name="M:BankSystem.Fakes.StubITransfer.#ctor">
             <summary>Initializes a new instance of type StubITransfer</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.StubITransfer.BankSystem#ITransfer#Money">
+            <summary>Sets the stub of ITransfer.get_Money()</summary>
+        </member>
+        <member name="F:BankSystem.Fakes.StubITransfer.MoneyGet">
+            <summary>Sets the stub of ITransfer.get_Money()</summary>
+        </member>
+        <member name="T:BankSystem.Fakes.StubTransfer">
+            <summary>Stub type of BankSystem.Transfer</summary>
+        </member>
+        <member name="M:BankSystem.Fakes.StubTransfer.#ctor(System.String,System.String,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.StubTransfer.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:BankSystem.Fakes.StubTransfer.InitializeStub">
+            <summary>Initializes a new instance of type StubTransfer</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.StubTransfer.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.StubTransfer.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
         </member>
     </members>
 </doc>

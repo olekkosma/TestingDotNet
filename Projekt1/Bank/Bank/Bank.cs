@@ -11,7 +11,23 @@ namespace BankSystem
     public class Bank
     {
         public ArrayList accounts { get; set; }
+        public string data { get; set; }
 
+        public void addAccountsFromFile(string file)
+        {
+            data = System.IO.File.ReadAllText(file);
+            string[] tokens = data.ToString().Split(
+    new[] { "\r\n", "\r", "\n"," " },StringSplitOptions.None);
+            var count = (tokens.Length + 1 / 2);
+
+            for (int i = 0; i < count; i++)
+            {
+                
+               
+                accounts.Add(new Account(tokens[i], Int32.Parse(tokens[i + 1])));
+                i++;
+            }
+        }
         public Bank()
         {
             accounts = new ArrayList();
@@ -70,7 +86,7 @@ namespace BankSystem
 				{
 					foreach (Transfer transfer in account.transfersToMake)
 					{
-						logIn(transfer.to).transfer(transfer.money);
+						logIn(transfer.to).transfer(transfer.Money);
 					}
 				}
                 account.nextWeek();

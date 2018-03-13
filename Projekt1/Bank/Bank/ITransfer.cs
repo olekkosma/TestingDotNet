@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace BankSystem
 {
     public interface ITransfer
-    { 
-	}
+    {
+        int Money { get; }
+    }
 }
