@@ -14,3 +14,5 @@ C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\b
 C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\bin\Debug\Bank.dll
 C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\bin\Debug\Bank.pdb
 C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\obj\Debug\BankProjectTest.csprojResolveAssemblyReference.cache
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\obj\Debug\BankProjectTest.csproj.CoreCompileInputs.cache
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankProjectTest\BankProjectTest\obj\Debug\BankProjectTest.csproj.CopyComplete

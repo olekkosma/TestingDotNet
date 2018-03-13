@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -65,6 +66,13 @@ namespace BankSystem
         {
             foreach(Account account in accounts)
             {
+				if (account.transfersToMake.Count > 0)
+				{
+					foreach (Transfer transfer in account.transfersToMake)
+					{
+						logIn(transfer.to).transfer(transfer.money);
+					}
+				}
                 account.nextWeek();
             }
         }

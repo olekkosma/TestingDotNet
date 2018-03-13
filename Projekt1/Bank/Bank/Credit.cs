@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace BankSystem
 {
-    public class Credit
+    public class Credit : ICredit
     {
        
-        public int valueOfLoan { get; set; }
+        private int valueOfLoan { get; set; }
+		public int ValueOfLoan
+		{
+			get { return valueOfLoan; }
+		}	
         public int loanTimeInWeeks { get; set; }
         public int provisionInProcents { get; set; }
         public int penaltyPerWeek { get; set; }
@@ -29,6 +33,11 @@ namespace BankSystem
             return totalValueToPay;
         }
 
+        public bool PayCreditImmediately()
+        {
+            //NOT IMPLEMENTED
+            return false;
+        }
 
         public bool IsTimeToPay()
         {

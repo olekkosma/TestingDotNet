@@ -1,0 +1,14 @@
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\b\Bank.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\b\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\b\nunit.framework.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\b\Bank.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\b\nunit.framework.xml
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\o\f.csprojResolveAssemblyReference.cache
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\o\f.csproj.CoreCompileInputs.cache
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\o\f.csproj.CopyComplete
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\b\Bank.Fakes.xml
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\b\Bank.Fakes.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\b\Bank.Fakes.pdb
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\o\Bank.Fakes.dll
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\obj\Debug\Fakes\b01\o\Bank.Fakes.pdb

@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,43 +9,61 @@ using System.Threading.Tasks;
 
 namespace BankSystem
 {
-    public class Account
+    public class Account : IAccount
     {
         public string name { get; set; }
         public int funds { get; set; }
         public ArrayList creditsTaken { get; set; }
+		public ArrayList transfersToMake { get; set; }
 
-        public Account(string Name,int Funds)
+		public Account(string Name,int Funds)
         {
             name = Name;
             funds = Funds;
             creditsTaken = new ArrayList();
-        }
-        public Account(string newName)
-        {
-            name = newName;
-            funds = 0;
-            creditsTaken = new ArrayList();
-        }
+			transfersToMake = new ArrayList();
+		}
+		public Account(string newName) : this(newName, 0) { }
 
         public void writeData()
         {
-            Console.WriteLine(name + " has " + (funds) + " money, and " + summaryOfAllLoans() + " loans");
+            Console.WriteLine(name + " has " + (funds) + " money, and " + SummaryOfAllLoans() + " loans");
         }
 
-        public int summaryOfAllLoans()
+        public int SummaryOfAllLoans()
         {
             int summary = 0;
-            foreach (Credit credit in creditsTaken)
+            foreach (ICredit credit in creditsTaken)
             {
                 summary += credit.HowMuchToPay();
             }
             return summary;
         }
 
-        public void transfer(int addMoney)
+        public void transfer(int money)
         {
-            funds += addMoney;
+			if (money > 0)
+			{
+				funds += money;
+			}
+        }
+		public void transferToAnotherAccount(int money, string nameToSend)
+		{
+			if (money > 0 && funds>money)
+			{
+				funds -= money;
+				transfersToMake.Add(new Transfer(name, nameToSend, money));
+			}
+		}
+
+        public bool payCreditBeforeTime(ICredit credit)
+        {
+            bool isPaid = credit.PayCreditImmediately();
+            if (isPaid)
+            {
+                creditsTaken.Remove(credit);
+            }
+            return isPaid;
         }
 
         public void nextWeek()
@@ -68,12 +88,15 @@ namespace BankSystem
             }
             foreach (Credit credit in creditsToDelete)
                 creditsTaken.Remove(credit);
-        }
 
-        public void takeLoan(Credit newCredit)
+			transfersToMake.Clear();
+
+		}
+
+        public void takeLoan(ICredit newCredit)
         {
             creditsTaken.Add(newCredit);
-            funds += newCredit.valueOfLoan;
+            funds += newCredit.ValueOfLoan;
         }
         public void pay(int valueToPay)
         {
@@ -81,8 +104,8 @@ namespace BankSystem
             {
                 if (funds >= valueToPay)
                 {
-                    funds -= valueToPay;
-                }
+					funds -= valueToPay;
+				}
                 else
                 {
                     throw new ArgumentException("Not enough money");
