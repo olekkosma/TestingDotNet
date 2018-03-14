@@ -1,5 +1,3 @@
 olek 300
-fred 400
+fred 100000
 marek 600
-simpson 900
-none 5

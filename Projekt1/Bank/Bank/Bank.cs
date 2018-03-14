@@ -22,8 +22,6 @@ namespace BankSystem
 
             for (int i = 0; i < count; i++)
             {
-                
-               
                 accounts.Add(new Account(tokens[i], Int32.Parse(tokens[i + 1])));
                 i++;
             }
