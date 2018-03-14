@@ -25,9 +25,9 @@ namespace BankSystem
 		}
 		public Account(string newName) : this(newName, 0) { }
 
-        public void writeData()
+        public string writeData()
         {
-            Console.WriteLine(name + " has " + (funds) + " money, and " + SummaryOfAllLoans() + " loans");
+            return (name + " has " + (funds) + " money, and " + SummaryOfAllLoans() + " loans");
         }
 
         public int SummaryOfAllLoans()

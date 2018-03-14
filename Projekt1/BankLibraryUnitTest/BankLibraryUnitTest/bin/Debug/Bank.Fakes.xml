@@ -340,24 +340,6 @@
         <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.MoneyGet">
             <summary>Sets the shim of Transfer.get_Money()</summary>
         </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.fromGet">
-            <summary>Sets the shim of Transfer.get_from()</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.fromSetString">
-            <summary>Sets the shim of Transfer.set_from(String value)</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.moneyGet">
-            <summary>Sets the shim of Transfer.get_money()</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.moneySetInt32">
-            <summary>Sets the shim of Transfer.set_money(Int32 value)</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.toGet">
-            <summary>Sets the shim of Transfer.get_to()</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.AllInstances.toSetString">
-            <summary>Sets the shim of Transfer.set_to(String value)</summary>
-        </member>
         <member name="M:BankSystem.Fakes.ShimTransfer.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
         </member>
@@ -375,24 +357,6 @@
         </member>
         <member name="P:BankSystem.Fakes.ShimTransfer.MoneyGet">
             <summary>Sets the shim of Transfer.get_Money()</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.fromGet">
-            <summary>Sets the shim of Transfer.get_from()</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.fromSetString">
-            <summary>Sets the shim of Transfer.set_from(String value)</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.moneyGet">
-            <summary>Sets the shim of Transfer.get_money()</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.moneySetInt32">
-            <summary>Sets the shim of Transfer.set_money(Int32 value)</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.toGet">
-            <summary>Sets the shim of Transfer.get_to()</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.ShimTransfer.toSetString">
-            <summary>Sets the shim of Transfer.set_to(String value)</summary>
         </member>
         <member name="T:BankSystem.Fakes.StubAccount">
             <summary>Stub type of BankSystem.Account</summary>

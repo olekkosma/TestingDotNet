@@ -1,0 +1,3 @@
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\Fakes\Bank.fakes : warning : Cannot generate shim for BankSystem.IAccount: type is an interface.
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\Fakes\Bank.fakes : warning : Cannot generate shim for BankSystem.ICredit: type is an interface.
+C:\Users\Ukleja\Desktop\TestingDotNet\Projekt1\BankLibraryUnitTest\BankLibraryUnitTest\Fakes\Bank.fakes : warning : Cannot generate shim for BankSystem.ITransfer: type is an interface.

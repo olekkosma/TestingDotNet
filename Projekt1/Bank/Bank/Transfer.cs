@@ -9,9 +9,9 @@ namespace BankSystem
 {
 	public class Transfer : ITransfer
 	{
-		public string from { get; set; }
-		public string to { get; set; }
-		private int money { get; set; }
+        public string from;
+        public string to;
+        private int money;
         public int Money
         {
             get { return money; }
