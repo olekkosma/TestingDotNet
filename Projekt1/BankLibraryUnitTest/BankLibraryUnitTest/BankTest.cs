@@ -89,7 +89,6 @@ namespace BankLibraryUnitTest
         [ExpectedException(typeof(ArgumentException))]
         public void CantPayForNegativeValue()
         {
-            BGZ.createAccount("tomek");
             BGZ.logIn("tomek").transfer(10000);
             BGZ.logIn("tomek").pay(-500);
         }
