@@ -9,8 +9,6 @@ namespace BankSystem
 	public interface ICredit
 	{
 		int ValueOfLoan { get; }
-        int Property { get; set; }
-
         int HowMuchToPay();
 		bool IsTimeToPay();
         bool PayCreditImmediately();

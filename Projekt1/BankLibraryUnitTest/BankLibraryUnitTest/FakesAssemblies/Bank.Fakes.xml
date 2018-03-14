@@ -64,6 +64,9 @@
         <member name="P:BankSystem.Fakes.ShimAccount.AllInstances.writeData">
             <summary>Sets the shim of Account.writeData()</summary>
         </member>
+        <member name="P:BankSystem.Fakes.ShimAccount.AllInstances.writeDataExtended">
+            <summary>Sets the shim of Account.writeDataExtended()</summary>
+        </member>
         <member name="M:BankSystem.Fakes.ShimAccount.BehaveAsCurrent">
             <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
         </member>
@@ -129,6 +132,9 @@
         </member>
         <member name="P:BankSystem.Fakes.ShimAccount.writeData">
             <summary>Sets the shim of Account.writeData()</summary>
+        </member>
+        <member name="P:BankSystem.Fakes.ShimAccount.writeDataExtended">
+            <summary>Sets the shim of Account.writeDataExtended()</summary>
         </member>
         <member name="T:BankSystem.Fakes.ShimBank">
             <summary>Shim type of BankSystem.Bank</summary>
@@ -349,9 +355,6 @@
         <member name="P:BankSystem.Fakes.ShimTransfer.Behavior">
             <summary>Assigns the behavior for all methods of the shimmed type</summary>
         </member>
-        <member name="M:BankSystem.Fakes.ShimTransfer.Bind(BankSystem.ITransfer)">
-            <summary>Binds the members of the interface to the shim.</summary>
-        </member>
         <member name="P:BankSystem.Fakes.ShimTransfer.ConstructorStringStringInt32">
             <summary>Sets the shim of Transfer.Transfer(String From, String To, Int32 Money)</summary>
         </member>
@@ -439,8 +442,8 @@
         <member name="M:BankSystem.Fakes.StubIAccount.BankSystem#IAccount#transferToAnotherAccount(System.String,System.Int32)">
             <summary>Sets the stub of IAccount.transferToAnotherAccount(String to, Int32 money)</summary>
         </member>
-        <member name="M:BankSystem.Fakes.StubIAccount.BankSystem#IAccount#writeData">
-            <summary>Sets the stub of IAccount.writeData()</summary>
+        <member name="M:BankSystem.Fakes.StubIAccount.BankSystem#IAccount#writeDataExtended">
+            <summary>Sets the stub of IAccount.writeDataExtended()</summary>
         </member>
         <member name="F:BankSystem.Fakes.StubIAccount.NextWeek">
             <summary>Sets the stub of IAccount.nextWeek()</summary>
@@ -460,8 +463,8 @@
         <member name="F:BankSystem.Fakes.StubIAccount.TransferToAnotherAccountStringInt32">
             <summary>Sets the stub of IAccount.transferToAnotherAccount(String to, Int32 money)</summary>
         </member>
-        <member name="F:BankSystem.Fakes.StubIAccount.WriteData">
-            <summary>Sets the stub of IAccount.writeData()</summary>
+        <member name="F:BankSystem.Fakes.StubIAccount.WriteDataExtended">
+            <summary>Sets the stub of IAccount.writeDataExtended()</summary>
         </member>
         <member name="T:BankSystem.Fakes.StubICredit">
             <summary>Stub type of BankSystem.ICredit</summary>
@@ -492,18 +495,6 @@
         </member>
         <member name="F:BankSystem.Fakes.StubICredit.ValueOfLoanGet">
             <summary>Sets the stub of ICredit.get_ValueOfLoan()</summary>
-        </member>
-        <member name="T:BankSystem.Fakes.StubITransfer">
-            <summary>Stub type of BankSystem.ITransfer</summary>
-        </member>
-        <member name="M:BankSystem.Fakes.StubITransfer.#ctor">
-            <summary>Initializes a new instance of type StubITransfer</summary>
-        </member>
-        <member name="P:BankSystem.Fakes.StubITransfer.BankSystem#ITransfer#Money">
-            <summary>Sets the stub of ITransfer.get_Money()</summary>
-        </member>
-        <member name="F:BankSystem.Fakes.StubITransfer.MoneyGet">
-            <summary>Sets the stub of ITransfer.get_Money()</summary>
         </member>
         <member name="T:BankSystem.Fakes.StubTransfer">
             <summary>Stub type of BankSystem.Transfer</summary>

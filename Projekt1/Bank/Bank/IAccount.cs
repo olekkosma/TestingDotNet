@@ -9,7 +9,7 @@ namespace BankSystem
 	public interface IAccount
 	{
 		
-		string writeData();
+		string writeDataExtended();
 		int SummaryOfAllLoans();
 		void transfer(int money);
 		void transferToAnotherAccount(string to,int money);

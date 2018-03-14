@@ -27,8 +27,14 @@ namespace BankSystem
 
         public string writeData()
         {
-            return (name + " has " + (funds) + " money, and " + SummaryOfAllLoans() + " loans");
+            return (name + " has " + (funds) + " money");
         }
+
+        public string writeDataExtended()
+        {
+            return (writeData()+", and " + SummaryOfAllLoans() + " loans");
+        }
+
 
         public int SummaryOfAllLoans()
         {

@@ -10,9 +10,9 @@ namespace BankLibraryUnitTest
     public class BankTest
     {
         Bank BGZ;
-
+       
         [TestInitialize]
-        public void Initialize() {
+        public void Setup() {
             BGZ = new Bank();
 			BGZ.createAccount("olek",10000);
 			BGZ.createAccount("tomek");
@@ -57,7 +57,7 @@ namespace BankLibraryUnitTest
         {
             Account randomPerson = new Account("adam", 500);
             string expected =  "adam has " + 500 + " money, and " + 0 + " loans";
-            Assert.AreEqual(expected, randomPerson.writeData());
+            Assert.AreEqual(expected, randomPerson.writeDataExtended());
         }
 
         [TestMethod]
@@ -80,6 +80,7 @@ namespace BankLibraryUnitTest
         [ExpectedException(typeof(ArgumentException))]
         public void CantPayWhenEnoughMoney()
         {
+            BGZ.createAccount("tomek");
             BGZ.logIn("tomek").transfer(10000);
             BGZ.logIn("tomek").pay(50000000);
         }
@@ -88,6 +89,7 @@ namespace BankLibraryUnitTest
         [ExpectedException(typeof(ArgumentException))]
         public void CantPayForNegativeValue()
         {
+            BGZ.createAccount("tomek");
             BGZ.logIn("tomek").transfer(10000);
             BGZ.logIn("tomek").pay(-500);
         }
@@ -201,6 +203,37 @@ namespace BankLibraryUnitTest
             BGZ.nextWeek();
             Assert.AreEqual(700, BGZ.logIn("jendrzej").funds);
         }
+
+        [TestMethod]
+        public void TransferingMoneyToNotExistingAccount()
+        {
+            try
+            {
+                BGZ.logIn("olek").transferToAnotherAccount("randomLettersasdfghjkl", 300);
+                BGZ.nextWeek();
+                Assert.Fail();
+            }catch(NullReferenceException e)
+            {}
+        }
+
+        [TestMethod]
+        public void TransferingMoneyToNotExistingAccountAndSendingBackMoney()
+        {
+
+            BGZ.logIn("balcer").transfer(500);
+            try
+            {
+                BGZ.logIn("balcer").transferToAnotherAccount("randomLettersasdfghjkl", 300);
+                BGZ.nextWeek();
+                Assert.Fail();
+            }
+            catch (NullReferenceException e)
+            {
+                
+            }
+            Assert.AreEqual(500, BGZ.logIn("balcer").funds);
+        }
+
 
         [TestMethod]
         public void StubPayCreditBeforeTime()

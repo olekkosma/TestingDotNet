@@ -18,7 +18,7 @@ namespace BankSystem
         public int provisionInProcents { get; set; }
         public int penaltyPerWeek { get; set; }
         public int totalValueToPay { get; set; }
-
+        
         public Credit(int ValueOfLoan, int LoanTimeInWeeks, int ProvisionInProcents, int PenaltyPerWeek)
         {
             valueOfLoan = ValueOfLoan;

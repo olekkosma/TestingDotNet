@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BankSystem
 {
-	public class Transfer : ITransfer
+	public class Transfer
 	{
         public string from;
         public string to;

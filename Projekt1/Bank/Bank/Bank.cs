@@ -52,15 +52,14 @@ namespace BankSystem
 
         public Account logIn(string name)
         {
-            Account toReturn = null;
-            foreach (Account accountTmp in accounts)
+                        foreach (Account accountTmp in accounts)
             {
                 if (name.Equals(accountTmp.name))
                 {
-                    toReturn = accountTmp;
+                    return accountTmp;
                 }
             }
-            return toReturn;
+            throw new NullReferenceException("There is not such an account");
         }
         private bool isAlreadyThatAccount(string name)
         {
@@ -84,7 +83,15 @@ namespace BankSystem
 				{
 					foreach (Transfer transfer in account.transfersToMake)
 					{
-						logIn(transfer.to).transfer(transfer.Money);
+                        try
+                        {
+                            logIn(transfer.to).transfer(transfer.Money);
+                        }
+                        catch ( NullReferenceException e)
+                        {
+                            logIn(transfer.from).transfer(transfer.Money);
+                            throw new NullReferenceException("There is not such an account");
+                        }
 					}
 				}
                 account.nextWeek();
