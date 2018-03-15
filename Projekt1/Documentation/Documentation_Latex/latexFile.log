@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.11)  14 MAR 2018 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.11)  15 MAR 2018 23:26
 entering extended mode
 **./latexFile.tex
 (latexFile.tex
@@ -1080,11 +1080,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-<useCases.png, id=4, 663.47874pt x 544.0325pt>
+<useCases.png, id=4, 643.40375pt x 522.95375pt>
 File: useCases.png Graphic file (type png)
  <use useCases.png>
 Package pdftex.def Info: useCases.png used on input line 35.
-(pdftex.def)             Requested size: 512.17606pt x 341.4473pt.
+(pdftex.def)             Requested size: 512.17114pt x 341.44002pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 37--44
 
@@ -1173,7 +1173,7 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
 m/lmr17.pfb>
-Output written on latexFile.pdf (2 pages, 219240 bytes).
+Output written on latexFile.pdf (2 pages, 218322 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
