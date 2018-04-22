@@ -1,0 +1,58 @@
+﻿@model Players.Models.Statistic
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Statistic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Match.City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Match.City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Player.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Player.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.goals)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.goals)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.assists)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.assists)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.minutes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.minutes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StatisticID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

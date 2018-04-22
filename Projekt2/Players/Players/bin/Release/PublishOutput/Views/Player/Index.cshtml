@@ -1,0 +1,102 @@
+﻿  @model Players.ViewModels.PlayerIndexData
+@using Players.Helpers;
+@{
+    ViewBag.Title = "Players";
+}
+<h2 class="text-center" id="playerId">@ViewData["Title"]</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+     
+        <th>
+            Full Name
+        </th>
+        <th>
+            All goals
+        </th>
+        <th>
+            All assists
+        </th>
+        <th>
+            All minutes
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.PLayerExtendeds)
+{
+    string selectedRow = "";
+    if (item.Players.ID == ViewBag.InstructorID)
+    {
+        selectedRow = "success";
+    }
+    <tr class="@selectedRow" valign="top">
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Players.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Goals)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Assists)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Minutes)
+        </td>
+        
+        <td>
+            @Html.ActionLink(" Select ", "Index", new { id = item.Players.ID }) |
+           
+                @Html.ActionLink("Edit", "Edit", new { id = item.Players.ID }) 
+            
+            @Html.ActionLink("Details", "Details", new { id = item.Players.ID }) |
+           
+                @Html.ActionLink("Delete", "Delete", new { id = item.Players.ID })
+        </td>
+    </tr>
+}
+
+</table>
+
+@if (Model.Statistics != null)
+{
+    <h3>Player's Stats</h3>
+    <table class="table">
+        <tr>
+            
+            <th>City</th>
+            <th>Goals</th>
+            <th>Assists</th>
+            <th>Minutes</th>
+        </tr>
+
+        @foreach (var item in Model.Statistics)
+        {
+            string selectedRow = "";
+            if (item.StatisticID == ViewBag.StatisticID)
+            {
+                selectedRow = "success";
+            }
+            <tr class="@selectedRow">
+                <td>
+                    @item.Match.City
+                </td>
+                <td>
+                    @item.goals
+                </td>
+                <td>
+                    @item.assists
+                </td>
+                <td>
+                    @item.minutes
+                </td>
+              
+            </tr>
+        }
+
+    </table>
+}

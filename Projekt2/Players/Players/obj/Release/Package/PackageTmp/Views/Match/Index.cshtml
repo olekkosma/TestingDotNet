@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Players.Models.Match>
+@using Players.Helpers;
+@{
+    ViewBag.Title = "Matches";
+}
+<h2 class="text-center" id="matchId">@ViewData["Title"]</h2>
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li id="addMatch">
+            <h2>
+                @Html.ActionLink("Create New", "Create")
+            </h2>
+        </li>
+    </ul>
+</div>
+
+@using (Html.BeginForm("Index", "Match", FormMethod.Get))
+{
+    <p>
+        Find Cities by name: @Html.TextBox("SearchString")
+        <input id="buttonSearch" type="submit" value="Search" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th >
+
+            @Html.ActionLink("City", "Index", new { sortOrder = ViewBag.NameSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("Date", "Index", new { sortOrder = ViewBag.DateSortParm })
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td name="Barcelona">
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Result)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MatchID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.MatchID })
+                <p id="@item.City" style="display:inline">|@Html.ActionLink("Delete", "Delete", new { id = item.MatchID })</p>
+            </td>
+        </tr>
+    }
+
+</table>

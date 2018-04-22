@@ -1,0 +1,6 @@
+C:\Users\Ukleja\Desktop\DotNetMVC\Projekt2\Players\Players.CodedUI\bin\Debug\Players.CodedUI.dll
+C:\Users\Ukleja\Desktop\DotNetMVC\Projekt2\Players\Players.CodedUI\bin\Debug\Players.CodedUI.pdb
+C:\Users\Ukleja\Desktop\DotNetMVC\Projekt2\Players\Players.CodedUI\obj\Debug\Players.CodedUI.csprojResolveAssemblyReference.cache
+C:\Users\Ukleja\Desktop\DotNetMVC\Projekt2\Players\Players.CodedUI\obj\Debug\Players.CodedUI.csproj.CoreCompileInputs.cache
+C:\Users\Ukleja\Desktop\DotNetMVC\Projekt2\Players\Players.CodedUI\obj\Debug\Players.CodedUI.dll
+C:\Users\Ukleja\Desktop\DotNetMVC\Projekt2\Players\Players.CodedUI\obj\Debug\Players.CodedUI.pdb

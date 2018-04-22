@@ -1,0 +1,48 @@
+﻿body {
+    padding-top: 90px;
+    padding-bottom: 20px;
+  background-color:#2b2b2b
+  
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+   color: white;
+}
+
+.navbar-brand {  
+  float: left;  
+  padding: 15px 15px;  
+  font-size: 40px;  
+  line-height: 20px;  
+  font-family:'Facebook Letter Faces' 
+       
+} 
+.jumbotron {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: white;
+  background-color: #428bca;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
